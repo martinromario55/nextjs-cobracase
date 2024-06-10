@@ -61,7 +61,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   const handleCheckout = async () => {
     if (user) {
       // create payment session
-      createCheckoutSession({ configId: id });
+      createPaymentSession({ configId: id });
     } else {
       // Login / register user
       localStorage.setItem("configurationId", id);
